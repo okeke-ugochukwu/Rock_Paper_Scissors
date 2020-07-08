@@ -1,0 +1,210 @@
+*:focus {
+    outline: none;
+}
+body {
+    background: #daa520;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.gameTitle, .gameTitle2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    height: 38rem;
+}
+.gameTitle a {
+    text-decoration: none;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 50px;
+    text-shadow: -5px 10px 3px rgb(44, 43, 43);
+}
+#rock {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+#paper {
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+#scissors {
+    margin-bottom: 15px;
+}
+.tagline, .tagline2 {
+    color: #29233a;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.Btn {
+    font-size: 20px;
+}
+#strtBtn {
+    width: 79%;
+    max-width: 333px;
+    margin: auto;
+    color: white;
+    background-color: #1a142b;
+    border: 1px solid #1a142b;
+    padding: 7px 25px;
+    border-radius: 5px;
+}
+#strtBtn:hover {
+    background: #0D0A16;
+}
+.Btn a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #1a142b;
+    border: 1px solid #1a142b;
+    padding: 7px 25px;
+    border-radius: 5px;
+}
+.Btn a:hover {
+    background: #0D0A16;
+}
+#nameLabel {
+    color: #0d0a16b4;
+    transition: .2s;
+}
+#playerName {
+    width: 75%;
+    max-width: 320px;
+    background: none;
+    color: #0d0a16b4;
+    border: 1px solid #0d0a16b4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    transition: .2s ;
+}
+.alert {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 200px;
+    animation:  shake .3s linear both;
+    display: none;
+}
+.playerScores {
+    display: flex;
+        justify-content: space-between;
+}
+.user {
+    font-size: 25px;
+    margin: 1vw;
+    margin-bottom: 0px;
+    border: 1px solid #0D0A16;
+    background: #0D0A16;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.BtnCon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.BtnCon button {
+    font-size: 20px;
+    background: none;
+    border: 1px solid #0D0A16;
+    padding: 5px 10px;
+    margin: 10px;
+    transition: .2s;
+    border-radius: 5px;
+}
+.BtnCon button:hover {
+    background: #0D0A16;
+    color: white;
+}
+.result { 
+    display: block;
+}
+.homeBtn {
+    margin-top: 20px;
+    color: white;
+    background-color: #1a142b;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.homeBtn:hover {
+    background: #0D0A16;
+}
+@keyframes shake {
+    25% {
+        margin-left: -10px;
+    }
+    50% {
+        margin-left: 30px;
+    }
+    75% {
+        margin-left: -10px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    #rock {
+        font-size: 100px;
+        margin-bottom: 25px;
+    }
+    #paper {
+        font-size: 95px;
+        margin-bottom: 20px;
+    }
+    #scissors {
+        margin-bottom: 15px;
+        font-size: 80px;
+    }
+    .tagline {
+        color: #29233a;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .user {
+        font-size: 30px;
+
+    }
+    .BtnCon button  {
+        padding: 15px 25px;
+
+    }
+}
+@media only screen and (min-width: 1000px), only screen and (max-device-width: 1000px) {
+    .gameTitle {
+        height: 45rem;
+
+    }
+    #rock {
+        font-size: 150px;
+        margin-bottom: 60px;
+    }
+    #paper {
+        font-size: 140px;
+        margin-bottom: 50px;
+    }
+    #scissors {
+        margin-bottom: 35px;
+        font-size: 120px;
+    }
+    .tagline {
+        color: #29233a;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .tagline2 {
+        margin-top: 40px;
+    }
+}
