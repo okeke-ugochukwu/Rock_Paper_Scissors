@@ -155,33 +155,7 @@ body {
         margin-left: 0px;
     }
 }
-@media only screen and (min-width: 600px) {
-    #rock {
-        font-size: 100px;
-        margin-bottom: 25px;
-    }
-    #paper {
-        font-size: 95px;
-        margin-bottom: 20px;
-    }
-    #scissors {
-        margin-bottom: 15px;
-        font-size: 80px;
-    }
-    .tagline {
-        color: #29233a;
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    .user {
-        font-size: 30px;
 
-    }
-    .BtnCon button  {
-        padding: 15px 25px;
-
-    }
-}
 @media only screen and (min-width: 1000px), only screen and (max-device-width: 1000px) {
     .gameTitle {
         height: 45rem;
@@ -206,5 +180,33 @@ body {
     }
     .tagline2 {
         margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px), only screen and (max-device-width: 600px) {
+    #rock {
+        font-size: 100px;
+        margin-bottom: 25px;
+    }
+    #paper {
+        font-size: 95px;
+        margin-bottom: 20px;
+    }
+    #scissors {
+        margin-bottom: 15px;
+        font-size: 80px;
+    }
+    .tagline {
+        color: #29233a;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .user {
+        font-size: 30px;
+
+    }
+    .BtnCon button  {
+        padding: 15px 25px;
+
     }
 }
