@@ -2,6 +2,24 @@ localStorage.clear;
 var nameCall = localStorage.getItem("Call");
 document.getElementById("UserName").innerHTML = nameCall;
 
+
+/game click sound/
+function playClickSound() {
+    var clicksound = document.getElementById("click");
+    clicksound.play();
+}
+
+/game cheer sound/
+function playCheerSound() {
+    var cheerSound = document.getElementById("cheer");
+    cheerSound.play();
+}
+
+/game buzzer sound/
+function playBuzzerSound() {
+    var buzzerSound = document.getElementById("buzzer");
+    buzzerSound.play();
+}
 /get buttons/
 var rockBtn = document.querySelector('#rock-Btn');
 var paperBtn = document.querySelector('#paper-Btn');
@@ -14,14 +32,16 @@ scissorsBtn.addEventListener('click', chooseScissors);
 
 /user input functions/
 function chooseRock() {
-	playRound('rock', computerPlay());
+    playClickSound();
+    playRound('rock', computerPlay());   
 }
 function choosePaper() {
-	playRound('paper', computerPlay());
+    playClickSound();
+    playRound('paper', computerPlay());    
 }
-
 function chooseScissors() {
-	playRound('scissors', computerPlay());
+    playClickSound();
+    playRound('scissors', computerPlay());   
 }
 
 /get scoreline/
@@ -43,6 +63,7 @@ function computerPlay() {
 
 /Main gameplay function/
 function playRound(userSelection, computerSelection) {
+   
     computerSelection = computerPlay()
 
     switch(true){
@@ -66,9 +87,11 @@ function playRound(userSelection, computerSelection) {
     /add winner condition statement/ 
     if (computerScore == 5) {
         endGame('Computer reached 5 first! <br/> You lost bro :(');
+        playBuzzerSound();
     }
     else if (userScore == 5) {
-        endGame('You win the game');
+        playCheerSound();
+        endGame('You win the game! :)');
     }
     
 }
